@@ -47,6 +47,9 @@ public interface HarborHtmlPath {
     /** The path of the HTML: /profile/profile.html */
     HtmlNext path_Profile_ProfileHtml = new HtmlNext("/profile/profile.html");
 
+    /** The path of the HTML: /sea/sea_land.html */
+    HtmlNext path_Sea_SeaLandHtml = new HtmlNext("/sea/sea_land.html");
+
     /** The path of the HTML: /signin/signin.html */
     HtmlNext path_Signin_SigninHtml = new HtmlNext("/signin/signin.html");
 
