@@ -1235,6 +1235,191 @@
       "methodLineCount": 11
     },
     {
+      "url": "/lido/sea/{productId}",
+      "typeName": "org.docksidestage.app.web.lido.sea.LidoSeaAction",
+      "simpleTypeName": "LidoSeaAction",
+      "description": "@author x-zeng",
+      "typeComment": "@author x-zeng",
+      "fieldTypeDocMetaList": [
+        {
+          "name": "purchaseBhv",
+          "publicName": "purchaseBhv",
+          "typeName": "org.docksidestage.dbflute.exbhv.PurchaseBhv",
+          "simpleTypeName": "PurchaseBhv",
+          "value": null,
+          "description": "The behavior of PURCHASE.",
+          "comment": "The behavior of PURCHASE.\n\u003cp\u003e\nYou can implement your original methods here.\nThis class remains when re-generating.\n\u003c/p\u003e\n\n@author DBFlute(AutoGenerator)",
+          "annotationList": [
+            "Resource"
+          ],
+          "nestTypeDocMetaList": []
+        }
+      ],
+      "methodName": "index",
+      "methodComment": null,
+      "annotationList": [
+        "Execute"
+      ],
+      "parameterTypeDocMetaList": [
+        {
+          "name": "productId",
+          "publicName": "productId",
+          "typeName": "java.lang.Integer",
+          "simpleTypeName": "Integer",
+          "value": null,
+          "description": null,
+          "comment": null,
+          "annotationList": [],
+          "nestTypeDocMetaList": []
+        }
+      ],
+      "formTypeDocMeta": {
+        "name": null,
+        "publicName": null,
+        "typeName": "org.docksidestage.app.web.lido.sea.LidoSeaForm",
+        "simpleTypeName": "LidoSeaForm",
+        "value": null,
+        "description": "@author x-zeng",
+        "comment": "@author x-zeng",
+        "annotationList": [],
+        "nestTypeDocMetaList": [
+          {
+            "name": "pay",
+            "publicName": "pay",
+            "typeName": "org.docksidestage.dbflute.allcommon.CDef$PaymentMethod",
+            "simpleTypeName": "CDef.PaymentMethod",
+            "value": "{HAN\u003dby hand, BAK\u003dbank transfer, CRC\u003dcredit card}",
+            "description": null,
+            "comment": null,
+            "annotationList": [
+              "Required"
+            ],
+            "nestTypeDocMetaList": []
+          }
+        ]
+      },
+      "returnTypeDocMeta": {
+        "name": null,
+        "publicName": null,
+        "typeName": "org.lastaflute.web.response.JsonResponse\u003corg.docksidestage.app.web.lido.sea.LidoSeaResult\u003e",
+        "simpleTypeName": "JsonResponse\u003cLidoSeaResult\u003e",
+        "value": "asJson(result)",
+        "description": null,
+        "comment": null,
+        "annotationList": [],
+        "nestTypeDocMetaList": [
+          {
+            "name": "products",
+            "publicName": "products",
+            "typeName": "java.util.List\u003corg.docksidestage.app.web.lido.sea.LidoSeaResult$LidoSeaProductPart\u003e",
+            "simpleTypeName": "List\u003cLidoSeaProductPart\u003e",
+            "value": null,
+            "description": null,
+            "comment": null,
+            "annotationList": [
+              "NotNull",
+              "Valid"
+            ],
+            "nestTypeDocMetaList": [
+              {
+                "name": "purchaseId",
+                "publicName": "purchaseId",
+                "typeName": "java.lang.Long",
+                "simpleTypeName": "Long",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              },
+              {
+                "name": "memberName",
+                "publicName": "memberName",
+                "typeName": "java.lang.String",
+                "simpleTypeName": "String",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              },
+              {
+                "name": "productName",
+                "publicName": "productName",
+                "typeName": "java.lang.String",
+                "simpleTypeName": "String",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              },
+              {
+                "name": "productHandleCode",
+                "publicName": "productHandleCode",
+                "typeName": "java.lang.String",
+                "simpleTypeName": "String",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              },
+              {
+                "name": "purchaseDate",
+                "publicName": "purchaseDate",
+                "typeName": "java.time.LocalDate",
+                "simpleTypeName": "LocalDate",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              },
+              {
+                "name": "purchasePrice",
+                "publicName": "purchasePrice",
+                "typeName": "java.lang.Integer",
+                "simpleTypeName": "Integer",
+                "value": null,
+                "description": null,
+                "comment": null,
+                "annotationList": [
+                  "Required"
+                ],
+                "nestTypeDocMetaList": []
+              }
+            ]
+          },
+          {
+            "name": "yourMood",
+            "publicName": "yourMood",
+            "typeName": "java.lang.String",
+            "simpleTypeName": "String",
+            "value": null,
+            "description": null,
+            "comment": null,
+            "annotationList": [
+              "Required"
+            ],
+            "nestTypeDocMetaList": []
+          }
+        ]
+      },
+      "fileLineCount": 63,
+      "methodLineCount": 7
+    },
+    {
       "url": "/member/add/",
       "typeName": "org.docksidestage.app.web.member.MemberAddAction",
       "simpleTypeName": "MemberAddAction",
